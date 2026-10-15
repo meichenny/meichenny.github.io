@@ -1,6 +1,6 @@
 ---
 title: "How Voice Agents Are Measured Now"
-date: 2026-10-15T14:55:00-07:00
+date: 2026-10-15T14:50:00-07:00
 description: "Speech-to-speech models used to be judged on whether they could reason over audio and take turns like a person. The newest scoreboards ask whether the agent finished the support call, how often, how fast and at what cost. What each benchmark measures, how it runs, and what it can't tell a contact-center buyer."
 tags: [voice-agents, benchmarks, evaluation, contact-centers, speech-to-speech]
 ShowToc: true
