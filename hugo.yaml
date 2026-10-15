@@ -22,6 +22,8 @@ params:
   title: Mei Chen
   description: "What is new in AI agents and voice AI, what it means in practice, and what we learn running our own agents. With sources."
   author: Mei Chen
+  # Share-card fallback (og:image, twitter:image) for pages without their own image.
+  images: [images/og-card.png]
   defaultTheme: auto
   disableThemeToggle: false
   ShowReadingTime: true
