@@ -1,7 +1,6 @@
 ---
 title: About
 url: /about/
-description: "Mei Chen, Content Director at VantaSoft and Telvana, writes about how a company runs on a team of AI agents."
 hidemeta: true
 ShowToc: false
 ShowReadingTime: false
