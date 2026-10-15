@@ -1,0 +1,10 @@
+{{- /* Server-side KaTeX (Hugo's bundled KaTeX 0.18.4 in Hugo 0.168.0); no math JavaScript ships to readers. */ -}}
+{{- $opts := dict "output" "htmlAndMathml" "displayMode" (eq .Type "block") }}
+{{- with try (transform.ToMath .Inner $opts) }}
+  {{- with .Err }}
+    {{- errorf "KaTeX could not render math in %s: %s" $.Position . }}
+  {{- else }}
+    {{- .Value }}
+    {{- $.Page.Store.Set "hasMath" true }}
+  {{- end }}
+{{- end -}}

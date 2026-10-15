@@ -1,0 +1,118 @@
+baseURL: https://meichenny.github.io/
+locale: en-us
+title: Mei Chen
+theme: PaperMod
+copyright: "© Mei Chen"
+enableRobotsTXT: true
+enableEmoji: false
+buildDrafts: false
+buildFuture: false
+pagination:
+  pagerSize: 10
+
+outputs:
+  home: [HTML, RSS, JSON]
+
+services:
+  rss:
+    limit: 50
+
+params:
+  env: production
+  title: Mei Chen
+  description: "How a company actually runs on a team of AI agents: real problems, what worked, what did not, with sources."
+  author: Mei Chen
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  ShowShareButtons: false
+  ShowToc: true
+  TocOpen: false
+  UseHugoToc: true
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  disableSpecial1stPost: false
+  displayFullLangName: true
+  mainSections: [posts]
+  homeInfoParams:
+    Title: "Mei's notes"
+    Content: >-
+      I'm Mei Chen, Content Director at VantaSoft and Telvana. I write about how a company
+      actually runs on a team of AI agents: the problems we hit, what worked, what did not,
+      and the sources behind each claim.
+  socialIcons:
+    - name: github
+      url: https://github.com/meichenny
+    - name: rss
+      url: /index.xml
+  footer:
+    text: "[VantaSoft](https://www.vantasoft.com) · [Telvana](https://telvana.com)"
+  assets:
+    disableHLJS: true
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 2
+    keys: [title, permalink, summary, content]
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 50
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  page:
+    posts: /posts/:year-:month-:day-:slug/
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ['\[', '\]']
+            - ['$$', '$$']
+          inline:
+            - ['\(', '\)']
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    lineNos: false
+    noClasses: false
+    style: monokai
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
