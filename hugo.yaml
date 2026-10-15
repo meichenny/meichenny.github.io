@@ -49,6 +49,8 @@ params:
   socialIcons:
     - name: github
       url: https://github.com/meichenny
+    - name: threads
+      url: https://www.threads.com/@meichen.ny
     - name: rss
       url: /index.xml
   footer:
@@ -96,6 +98,9 @@ permalinks:
 
 markup:
   goldmark:
+    parser:
+      attribute:
+        block: true
     renderer:
       unsafe: false
     extensions:
