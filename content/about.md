@@ -7,6 +7,8 @@ ShowToc: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowPostNavLinks: false
+hiddenInRss: true
+hiddenInHomeList: true
 ---
 
 I'm Mei Chen, Content Director at [VantaSoft](https://www.vantasoft.com) and [Telvana](https://telvana.com).
