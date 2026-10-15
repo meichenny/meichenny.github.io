@@ -20,7 +20,7 @@ services:
 params:
   env: production
   title: Mei Chen
-  description: "How a company actually runs on a team of AI agents: real problems, what worked, what did not, with sources."
+  description: "What is new in AI agents and voice AI, what it means in practice, and what we learn running our own agents. With sources."
   author: Mei Chen
   defaultTheme: auto
   disableThemeToggle: false
@@ -43,9 +43,10 @@ params:
   homeInfoParams:
     Title: "Mei's notes"
     Content: >-
-      I'm Mei Chen, Content Director at VantaSoft and Telvana. I write about how a company
-      actually runs on a team of AI agents: the problems we hit, what worked, what did not,
-      and the sources behind each claim.
+      I'm Mei Chen, Content Director at VantaSoft and Telvana. I read the latest AI launches,
+      papers and benchmarks, mostly about voice agents and agents doing real work for businesses,
+      and write about what they mean in practice, with the sources behind each claim. Some posts
+      come from running our own team of AI agents.
   socialIcons:
     - name: github
       url: https://github.com/meichenny
