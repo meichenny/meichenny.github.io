@@ -56,6 +56,8 @@ params:
       url: https://www.linkedin.com/in/meichenny/
     - name: threads
       url: https://www.threads.com/@meichen.ny
+    - name: x
+      url: https://x.com/meichen_ny
     - name: rss
       url: /index.xml
   footer:
